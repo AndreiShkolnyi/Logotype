@@ -1,0 +1,102 @@
+.hamburger-menu {
+  display: none;
+  z-index: 100;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+.menu__btn {
+  transition-duration: .25s;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+  color: white;
+}
+
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+  color: white;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  transition-duration: .25s;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+  z-index: 100;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  opacity: 0.9;
+  background-color: #5a5858;
+  box-shadow: 1px 0px 6px rgba(8, 8, 8);
+}
+
+.menu__item_link {
+  transition-duration: .25s;
+  display: block;
+  padding: 12px 24px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menu__item:hover {
+  background-color: gray;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+  color: white;
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+  color: white;
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.number_item {
+  display: none;
+}

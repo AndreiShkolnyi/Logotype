@@ -1,0 +1,20 @@
+@charset "UTF-8";
+.what-we-do {
+  background-size: cover;
+  background: white url("../img/what_we_do.png") center;
+  position: relative;
+  padding-bottom: 150px;
+}
+.what-we-do .empty_block_black {
+  background-color: black;
+}
+.what-we-do .empty_block_black:before {
+  content: "Проекты";
+  color: black;
+  font-family: Roboto, sans-serif;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+}
+
+/*# sourceMappingURL=what_we_do.css.map */

@@ -1,0 +1,35 @@
+.content_title {
+    color: #000000;
+    font-family: Gilroy, sans-serif;
+    font-size: 46px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 110px;
+    text-align: left;
+}
+
+.content_text {
+    color: #000000;
+    font-family: Roboto, serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 34px;
+    text-align: left;
+}
+
+.content_list {
+    color: #000000;
+    font-family: Roboto, serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 34px;
+    text-align: left;
+    list-style: none;
+}
+
+/*# sourceMappingURL=content.css.map */

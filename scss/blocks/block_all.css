@@ -1,0 +1,13 @@
+.block__all {
+  background-size: cover;
+  background: #303030 url("../img/all.png") no-repeat center;
+  padding: 50px 0;
+  text-align: center;
+  position: relative;
+}
+.block__all .block__all_button {
+  color: white;
+  border: 1px solid white;
+}
+
+/*# sourceMappingURL=block_all.css.map */

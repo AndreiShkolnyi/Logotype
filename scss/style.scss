@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import 'blocks/section_top';
+@import 'blocks/content';
+@import 'blocks/button';
+@import "blocks/footer";
+@import "blocks/social";
+@import "blocks/menu";
+@import "blocks/normal";
+@import "blocks/block_all";
+@import "blocks/what_we_do";
+@import "blocks/benefits";
+
+@font-face {
+  font-family: 'Gilroy', 'Rubik', sans-serif;
+  src: local('Gilroy'),
+  url(../fonts/Gilroy.otf);
+}
+
+.container {
+  min-width: 320px;
+  padding: 0 10%;
+}
+
+.block_title {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: #000000;
+  font-family: Gilroy, sans-serifi;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 55.61px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 20px 20px 20px 20px;
+  width: 360px;
+  height: fit-content;
+
+  .card-title {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #000000;
+    font-family: Roboto, serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  .card-text {
+    color: #000000;
+    font-family: Roboto, serif;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-align: left;
+  }
+}
+
+.block {
+  background-color: #bdcbd7;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 200px 50px;
+  position: relative;
+
+  .content_block1 {
+    margin-right: 50px;
+  }
+
+  .content_img {
+    left: 0;
+    width: 830px;
+    bottom: -130px;
+    z-index: 2;
+    position: absolute;
+  }
+}
+
+.button_content {
+  margin-top: 40px;
+  color: #000000;
+  font-family: Roboto, serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-align: center;
+}
+
+.block_tinkoff {
+  background: #f7cf00;
+  justify-content: flex-start;
+
+  .content_block_tinkoff {
+
+  }
+
+  .block_2_img {
+    z-index: 3;
+    position: absolute;
+    right: 100px;
+    width: 520px;
+    bottom: -40px;
+  }
+
+  .block_2_img__shadow {
+    z-index: 2;
+    position: absolute;
+    width: 520px;
+    right: 245px;
+    bottom: -191px;
+  }
+}
+
+.block_adidas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 150px 0 0 0;
+
+  .block_adidas_content {
+    padding-left: 10%;
+    padding-top: 20px;
+    padding-right: 120px;
+    align-self: flex-start;
+  }
+
+  .block_adidas_button {
+    background: black;
+    color: white;
+  }
+
+  .block_adidas_content_list {
+    padding-bottom: 50px;
+  }
+
+  .block_img {
+    width: 40%;
+  }
+
+  .block_adidas_img {
+    width: 100%;
+  }
+}
+
+.cards_company {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  flex-flow: wrap row;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 100px;
+
+  &:after {
+    content: "";
+    border-top: 4px solid #e74c3c;
+    width: 45px;
+    position: absolute;
+    bottom: 0;
+    left: 48%
+  }
+
+}
+
+.card_company {
+  text-align: center;
+  margin: 20px;
+  width: 250px;
+}
+
+@media (max-width: 1200px) {
+
+  .content_img {
+    width: 650px !important;
+  }
+}
+
+@media (max-width: 1060px) {
+  .img_6 {
+    left: 28.5%;
+  }
+  .section-top__menu {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .section-top__menu__list {
+    display: none !important;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .block_2_img__shadow {
+    display: none;
+  }
+  .block_2_img {
+    display: none;
+  }
+  .content_img {
+    display: none;
+  }
+  .section-top__info__title_title {
+    text-align: center !important;
+  }
+
+  .section-top__info__text_text {
+    text-align: center !important;
+  }
+  .block {
+    justify-content: center;
+  }
+  .content_text {
+    text-align: center;
+  }
+  .content_gazprom {
+    text-align: center;
+  }
+  .block_img {
+    display: none;
+  }
+  .block_adidas {
+    padding: 150px 0;
+    justify-content: center;
+  }
+  .button_container {
+    text-align: center;
+  }
+  .content_title {
+    text-align: center;
+  }
+  .content_list {
+    text-align: center;
+  }
+  .block_adidas_content {
+    padding: 0 !important;
+  }
+  .content_block1 {
+    margin-right: 0 !important;
+  }
+  .h3_client {
+    font-size: 26px;
+  }
+  .video_client {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .arrow_img {
+    display: none;
+  }
+  .client_content {
+    padding: 50px 0 0 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .img_6 {
+    left: 25.5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .img_6 {
+    left: 22.5%;
+  }
+  .card_company {
+    margin: 50px;
+    width: 100%;
+  }
+  .footer_number {
+    font-size: 41px;
+  }
+  .footer_title {
+    font-size: 41px;
+  }
+  .video_client {
+    flex-wrap: wrap;
+  }
+  .client_content {
+    padding: 50px 0 0 0;
+  }
+  .button_next {
+    top: 25%;
+    right: -3%;
+  }
+  .arrow_img {
+    height: 100px;
+  }
+}
+
+@media (max-width: 700px) {
+  .img_6 {
+    left: 0;
+  }
+  .title_benefits {
+    height: 200px;
+  }
+  .benefits_title {
+    padding: 0;
+  }
+  .number_item {
+    display: block;
+  }
+  .phone-number {
+    display: none;
+  }
+  .section-top__header {
+    justify-content: center;
+  }
+  .button_next {
+    top: 25%;
+    right: -7%;
+  }
+}
+
+@media (max-width: 500px) {
+  .button_next {
+    display: none;
+  }
+  .section-top__language_toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer {
+    margin-bottom: -10px;
+  }
+  .footer_title {
+    line-height: 80px;
+    font-size: 31px;
+  }
+  .footer_number {
+    line-height: 80px;
+    font-size: 31px;
+  }
+}

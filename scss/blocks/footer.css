@@ -1,0 +1,28 @@
+.footer {
+  background-size: cover;
+  background: url("../../img/footer.png") no-repeat center;
+}
+
+.footer_title {
+  color: white;
+  text-align: center;
+}
+
+.footer_text {
+  color: white;
+  color: #ffffff;
+  font-family: Gilroy, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 110px;
+  text-align: center;
+}
+
+.footer_number {
+  color: white;
+  text-align: center;
+}
+
+/*# sourceMappingURL=footer.css.map */

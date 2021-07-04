@@ -1,0 +1,20 @@
+.block_2 {
+  background: #f7cf00;
+  justify-content: flex-start;
+}
+.block_2 .block_2_img {
+  z-index: 3;
+  position: absolute;
+  right: 100px;
+  width: 520px;
+  bottom: -40px;
+}
+.block_2 .block_2_img__shadow {
+  z-index: 2;
+  position: absolute;
+  width: 520px;
+  right: 245px;
+  bottom: -191px;
+}
+
+/*# sourceMappingURL=block_2.css.map */
