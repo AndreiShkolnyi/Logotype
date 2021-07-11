@@ -1,0 +1,43 @@
+.section-clients {
+  > h3 {
+    color: $black;
+    font-family: Gilroy, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 110px;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 2%;
+  }
+
+  .section-clients-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 12.5%;
+
+    .clients_card {
+      flex-basis: 19%;
+      padding: 1vw;
+      text-align: center;
+
+      > img {
+        width: 7vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 1925px) {
+  .section-clients {
+    .section-clients-cards {
+      .clients_card {
+        > img {
+          width: 10vw;
+        }
+      }
+    }
+  }
+
+}

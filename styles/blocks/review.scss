@@ -1,0 +1,76 @@
+.review {
+  background: url("../img/video__client_bg.png") top center no-repeat;
+  background-size: cover;
+  margin: 5% 5%;
+
+  .review__wraper {
+    padding: 5% 5%;
+    display: flex;
+    align-items: center;
+
+    .rewiev__video {
+      flex-basis: 60%;
+    }
+
+    .review_info {
+      padding-left: 6vw;
+      flex-basis: 34%;
+
+      .client-name {
+        font-size: 1.2vw;
+        line-height: 3vw;
+        color: $black;
+        font-weight: 600;
+      }
+
+      .client-text {
+        color: $black;
+        font-size: 1vw;
+        line-height: 2vw;
+        font-weight: 300;
+      }
+    }
+
+    .review_next-button {
+
+      &:hover {
+        transform: scale(0.7);
+        transition-duration: 500ms;
+      }
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .review {
+    .review__wraper {
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+
+      .review_info {
+        flex-basis: 100%;
+        padding: 5vw 0 0 0;
+        text-align: center;
+
+        .client-name {
+          font-size: 2.5vw;
+          line-height: 6vw;
+        }
+
+        .client-text {
+          font-size: 1.5vw;
+          line-height: 4vw;
+        }
+      }
+
+      .review_next-button {
+        top: 50%;
+        position: absolute;
+        right: 0;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+}

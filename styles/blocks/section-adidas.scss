@@ -1,0 +1,80 @@
+.section-adidas {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 9%;
+
+  .section-adidas__info {
+    padding-top: 7%;
+    flex-basis: 47%;
+
+    > h4 {
+      color: $black;
+      font-family: Gilroy, sans-serif;
+      font-size: 2.5vw;
+      font-weight: 400;
+    }
+
+    > ul {
+      padding: 5% 0;
+
+      > li {
+        color: $black;
+        font-size: 1.2vw;
+        font-weight: 300;
+        line-height: 3vw;
+
+      }
+    }
+
+    > button {
+      @include btn($white, $black);
+      padding: 2.5%;
+    }
+  }
+
+  .section-adidas__img {
+    width: 42vw;
+
+    > img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .section-adidas {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+
+    .section-adidas__info {
+      flex-basis: 100%;
+      order: -1;
+      text-align: center;
+      padding: 12%;
+
+      > h4 {
+        font-size: 10.5vw;
+      }
+
+      > ul {
+        > li {
+          font-size: 3.2vw;
+          line-height: 11vw;
+        }
+      }
+
+      > button {
+        width: 100%;
+        font-size: 5vw;
+        padding: 7%;
+      }
+    }
+
+    .section-adidas__img {
+      width: 100%;
+      padding-right: 12%;
+    }
+  }
+
+}

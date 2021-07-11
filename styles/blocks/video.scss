@@ -1,0 +1,54 @@
+.video-frame {
+  position: relative;
+
+  > video {
+    width: 100%
+  }
+
+  .hide {
+    opacity: 0;
+  }
+
+  .play-button_container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+    #playBtn {
+      position: relative;
+      height: 3vw;
+      width: 3vw;
+      padding: 2.5vw;
+      border: 3px solid RGBA(255, 255, 255, 0.39);
+      border-radius: 50%;
+      transition-duration: 500ms;
+      &:hover {
+        transform: scale(0.8);
+      }
+
+
+      > img {
+        width: 3vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    > p {
+      font-size: 1.5vw;
+      line-height: 1vw;
+      font-weight: 300;
+      color: $white;
+      padding-top: 3vw;
+    }
+  }
+}

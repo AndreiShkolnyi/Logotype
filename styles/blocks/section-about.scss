@@ -1,0 +1,54 @@
+.section-about {
+  background: url("../img/what_we_do-bg.png") $white center no-repeat;
+  background-size: cover;
+
+  .about_info {
+    padding-top: 80px;
+
+    > h3 {
+      color: $black;
+      font-family: Gilroy, sans-serif;
+      font-size: 48px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 55.61px;
+      text-align: center;
+    }
+  }
+
+  .about__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+  }
+
+  .section-about__next-block_link {
+    @include next-block_link($black, $black);
+  }
+}
+
+@media (max-width: 480px) {
+  .section-about {
+
+    .section-about__next-block_link {
+      a {
+        font-size: 6vw;
+      }
+    }
+  }
+
+
+}
+
+@media (max-width: 900px) {
+  .section-about {
+    .section-about__next-block_link {
+      a {
+        font-size: 3vw;
+      }
+    }
+  }
+
+}

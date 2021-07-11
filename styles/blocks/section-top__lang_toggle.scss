@@ -1,0 +1,23 @@
+.section-top__lang_toggle {
+  span {
+    width: 21px;
+    height: 16px;
+    color: $white;
+    opacity: 0.5;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;
+    padding: 10px;
+
+
+    &:hover {
+      opacity: 1;
+      border: 1px solid $white;
+
+    }
+  }
+}

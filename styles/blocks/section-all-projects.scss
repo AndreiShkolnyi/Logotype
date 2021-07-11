@@ -1,0 +1,38 @@
+.section-all-projects {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background: $section-all-gray url("../img/section-all_bg.png") top center no-repeat;
+
+  .section-all-info {
+    text-align: center;
+    min-width: 18.5%;
+    padding: 3%;
+
+    > button {
+      @include btn($white);
+      background-color: transparent;
+      border-color: $white;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .section-all-projects {
+    .section-all-info {
+      text-align: center;
+      min-width: 79%;
+      padding: 7%;
+
+      > button {
+        width: 100%;
+        font-size: 5vw;
+        padding: 7%;
+      }
+    }
+  }
+
+}

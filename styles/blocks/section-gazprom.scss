@@ -1,0 +1,85 @@
+.section-gazprom {
+  display: flex;
+  background-color: $gazprom-gray;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 47vw;
+  padding-right: 9.3%;
+
+  .section-gazprom__site {
+    padding-top: 18%;
+    max-height: 100%;
+
+    > img {
+      width: 67vw;
+    }
+  }
+
+  .section-gazprom_info {
+    > h4 {
+      color: $black;
+      font-family: Gilroy, sans-serif;
+      font-size: 2.5vw;
+      font-weight: 400;
+    }
+
+    > p {
+      color: $black;
+      font-size: 1.2vw;
+      font-weight: 300;
+      padding: 20% 0;
+    }
+
+    > button {
+      @include btn($black);
+      background-color: transparent;
+    }
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1024px) {
+  .section-gazprom {
+    .section-gazprom_info {
+      > button {
+        font-size: 1.5vw;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 760px) {
+  .section-gazprom {
+    max-height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+
+    .section-gazprom__site {
+      > img {
+        width: 100%;
+      }
+    }
+
+    .section-gazprom_info {
+      order: -1;
+      padding-top: 40px;
+
+      > h4 {
+        font-size: 11.5vw;
+      }
+
+      > p {
+        text-align: center;
+        font-size: 4.2vw;
+      }
+
+      > button {
+        width: 100%;
+        font-size: 5vw;
+        padding: 7%;
+      }
+    }
+  }
+
+}

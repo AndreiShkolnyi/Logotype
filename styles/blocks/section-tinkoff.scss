@@ -1,0 +1,96 @@
+.section-tinkoff {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12%;
+  background-color: $tinkoff-yellow;
+  max-height: 47vw;
+
+  .section-tinkoff__info {
+    h4 {
+      color: $black;
+      font-family: Gilroy, sans-serif;
+      font-size: 2.5vw;
+      font-weight: 400;
+    }
+
+    ul {
+      padding: 2vw 0;
+
+      li {
+        color: $black;
+        font-size: 1.2vw;
+        font-weight: 300;
+        line-height: 3vw;
+      }
+    }
+
+    button {
+      @include btn();
+      background-color: transparent;
+      padding: 4%;
+    }
+  }
+
+  .section-tinkoff__phone {
+    padding-top: 10%;
+    position: relative;
+
+    .section-tinkoff_img {
+      position: relative;
+      z-index: 2;
+      width: 39vw;
+    }
+
+    .phone_shadow {
+      width: 50vw;
+      top: 57%;
+      right: 9%;
+      position: absolute;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .section-tinkoff {
+    max-height: 100%;
+    flex-wrap: wrap;
+
+    .section-tinkoff__info {
+      padding-top: 40px;
+      text-align: center;
+      width: 100%;
+
+      > h4 {
+        font-size: 10.5vw;
+      }
+
+      > ul {
+        padding: 6vw 0;
+
+        > li {
+          font-size: 3.2vw;
+          line-height: 11vw;
+        }
+      }
+
+      > button {
+        width: 100%;
+        font-size: 5vw;
+        padding: 7%;
+      }
+    }
+
+    .section-tinkoff__phone {
+      .section-tinkoff_img {
+        width: 100%;
+      }
+
+      .phone_shadow {
+        width: 100%;
+        top: 64%;
+        right: 19%;
+      }
+    }
+  }
+}

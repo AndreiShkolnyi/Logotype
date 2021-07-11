@@ -1,0 +1,27 @@
+.menu {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    li {
+
+      a {
+        color: $white-gray;
+        text-decoration: none;
+        font-size: 22px;
+        line-height: 20px;
+        font-weight: 300;
+        padding: 10px;
+        margin: 0 10px;
+        border: 2px solid transparent;
+        transition-duration: 300ms;
+        transition-property: border-color;
+
+        &:hover {
+          border-color: $white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@import "reset";
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "core";
+
+@import "blocks/section-top";
+@import "blocks/menu";
+@import "blocks/logo";
+@import "blocks/section-top__lang_toggle";
+@import "blocks/section-about";
+@import "blocks/card";
+@import "blocks/section-gazprom";
+@import "blocks/section-tinkoff";
+@import "blocks/section-adidas";
+@import "blocks/section-all-projects";
+@import "blocks/section-benefits";
+@import "blocks/section-clients";
+@import "blocks/speech";
+@import "blocks/review";
+@import "blocks/video";
+@import "blocks/footer";
+@import "blocks/footer-social";
